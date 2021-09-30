@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="Task.css">
+</head>
+
+<body>
+    <p>Задание 1 Создать html-страницу со светофором и кнопкой, которая
+        переключает светофор на следующий цвет.</p>
+    <div id="task1">
+        <div class="trafficlights">
+            <div class="color" id="red"></div>
+            <div class="color" id="yellow"></div>
+            <div class="color" id="green"></div>
+        </div>
+        <button id="next">Next</button>
+    </div>
+
+    <p>Задание 2 Создать html-страницу для отображения/редактирования текста.
+        При открытии страницы текст отображается с помощью тега
+        div. При нажатии Ctrl+E, вместо div появляется textarea с тем
+        же текстом, который теперь можно редактировать. При нажатии
+        Ctrl+S, вместо textarea появляет div с уже измененным текстом.
+        Не забудьте выключить поведение по умолчанию для этих сочетаний клавиш.</p>
+    <br>
+    <div>Press Ctrl+E for edit text</div>
+    <div>Press Ctrl+S for save text</div>
+    <hr>
+    <br>
+    <textarea id="area"></textarea>
+    <div id="view">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi blanditiis nisi exercitationem cupiditate quia consequuntur reprehenderit ducimus. Repudiandae eum voluptates, vel nemo deleniti nam nobis, odio magnam tempora ipsum dolorem ex, temporibus deserunt? Inventore modi est obcaecati temporibus error maiores, optio accusamus, nihil necessitatibus molestias in doloremque. Nesciunt consectetur, laboriosam similique amet nihil debitis enim odit tenetur cupiditate, doloribus minima non sint voluptate sequi, at accusantium quos rerum nisi natus eligendi deleniti. Repellat similique, provident, deserunt, velit impedit optio earum aliquid ipsum blanditiis aut mollitia? Dicta, magnam eum optio molestiae, amet ipsam quaerat, labore eaque incidunt nulla atque error similique.</div>
+
+    <p>Задание 3 Создать html-страницу, на которой пользователь может ввести номер месяца, год, и получить календарь на указанный месяц.
+        Календарь можно генерировать с помощью таблицы. Начальный
+        день недели всегда должен быть понедельник.</p>
+    <form name="test" method="post" class="form">
+        <p>Month:
+            <input id="entermonth" type="text" size="10">
+        </p>
+        <p>Year:
+            <input id="enteryear" type="text" size="10">
+        </p>
+    </form>
+    <button id="generate">Generate</button>
+    <div id="currentdate"><b></b></div>
+    <div id="calendar"></div>
+
+    <script src="Task.js"></script>
+</body></html>
