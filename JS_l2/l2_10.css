@@ -1,0 +1,99 @@
+*,
+::before,
+::after {
+/* box-sizing определяет как вычисляется общая ширина и высота элемента.border-box говорит браузеру учитывать любые границы и внутренние отступы в значениях, которые вы указываете в ширине и высоте элемента. Если вы выставите элементу ширину 100 пикселей, то эти 100 пикселей будут включать в себя границы и внутренние отступы, а контент сожмётся, чтобы выделить для них место. Обычно это упрощает работу с размерами элементов.*/
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+    margin: 0;
+}
+
+body {
+    max-width: 1300px;
+    margin: auto;
+    background-color: #32333c;
+}
+
+h1{
+    text-align: center;
+    background: linear-gradient(to left,#bf0000,#9d9743);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    color:#3b3b3b;
+}
+
+.work_place {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+/*Трансформирует элемент, в частности, позволяет его масштабировать, вращать, сдвигать, наклонять, а также комбинировать виды трансформаций.translate -
+сдвигает элемент на заданное значение по горизонтали и вертикали*/
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    margin: 50px 3px 10px;
+    display: flex;
+    justify-content: space-around;
+    min-height: 600px;
+    align-items: center;
+}
+
+
+#gallery {
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.bg-image {
+    margin-top: 130px;
+    height: 600px;
+    width: 1300px;
+    background-image: url(img/zaichiki-5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* эффект размытия */
+    filter: blur(8px);
+/*    -webkit-filter: blur(8px);*/
+}
+
+#sign_picture {
+    margin-top: 10px;
+    color: #914040;
+    font-size: 20px;
+}
+
+#left {
+    width: 200px;
+    opacity: 0.2;
+    text-align: center;
+/*    margin-right: 50px;*/
+}
+
+#left:hover {
+    opacity: 0.7;
+}
+
+#right {
+    width: 200px;
+    opacity: 0.2;
+    text-align: center;
+/*     margin-left: 50px;*/
+}
+
+#right:hover {
+    opacity: 0.7;
+}
