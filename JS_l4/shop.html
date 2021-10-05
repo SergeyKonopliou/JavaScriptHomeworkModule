@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Book shop</title>
+    <link rel="stylesheet" href="shop.css">
+
+</head>
+
+<body>
+    <div id="mainWindow">
+        <div class="bookWindow">
+            <img src="img/cover.jpg" alt="1">
+            <div class="info">
+                <div class="title">Мастер и Маргарита</div>
+                <div class="author">М.Булгаков</div>
+                <div class="price">20$</div>
+            </div>
+            <button class="select1" onclick="add_book()">Select</button>
+        </div>
+        <div class="bookWindow">
+            <img src="img/nikolaj-nosov-neznajka-na-lune.jpg" alt="2">
+            <div class="info">
+                <div class="title">Незнайка на луне</div>
+                <div class="author">Н.Носов</div>
+                <div class="price">10$</div>
+            </div>
+            <button class="select2" onclick="add_book()">Select</button>
+        </div>
+        <div class="bookWindow">
+            <img src="img/%D0%A1%D0%BE%D0%B1%D0%B0%D1%87%D1%8C%D0%B5_%D1%81%D0%B5%D1%80%D0%B4%D1%86%D0%B5(%D0%BE%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0).jpg" alt="3">
+            <div class="info">
+                <div class="title">Собачье сердце</div>
+                <div class="author">М.Булгаков</div>
+                <div class="price">15$</div>
+            </div>
+            <button class="select3" onclick="add_book()">Select</button>
+        </div>
+        <div>
+            <form action="" method="GET">
+                <div>
+                    Book: <input type="text" name="name" id="bookname" />
+                </div>
+                <div>
+                    Quantity: <input type="text" name="quantity" id="quantity" />
+                </div>
+                <div>
+                    Name: <input type="text" name="author" id="authorname" />
+                </div>
+                <div>
+                    Delivery adress: <textarea name="adress" id="adress" cols="20" rows="4"></textarea>
+                </div>
+                <div>
+                    Delivery date: <input type="text" name="date" id="date" />
+                </div>
+                <div>
+                    Comment: <textarea name="comment" id="comment" cols="20" rows="4"></textarea>
+                </div>
+                <input type="button" name="buy" value="Buy" id="Buy">
+            </form>
+        </div>
+    </div>
+    <div id="mess"></div>
+
+    <script src="shop.js"></script>
+</body>
+
+</html>
