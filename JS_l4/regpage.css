@@ -1,0 +1,81 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+    margin: 0;
+}
+
+body {
+    max-width: 1300px;
+    margin: auto;
+    background-color: burlywood;
+}
+
+.main {
+    width: 400px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    margin: 100px 500px 100px;
+}
+h1{
+    text-align: center;
+}
+form{
+    margin-top:50px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+.field{
+    width: 400px;
+    height: 40px;
+}
+
+.head{
+    display: flex;
+    justify-content: flex-end; 
+    margin-top: 10px;
+}
+.userPage{
+    margin-left: 150px;
+    width: 1000px;
+    height: 300px;
+   display: flex;
+    flex-direction: row;
+    
+}
+.field1{
+    width: 300px;
+    height: 30px;
+}
+.blockInfo{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#saveButton{
+    margin-left: 250px;
+   width: 800px;
+    height: 30px;  
+}
+.alertEmail,.alertPassword,.alertRepeatePassword{
+    padding-left: 200px;
+    color: red;
+    opacity: 0;
+}
+

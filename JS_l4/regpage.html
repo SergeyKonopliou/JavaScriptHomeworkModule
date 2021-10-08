@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="regpage.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1>Registration</h1>
+        <form action="" method="get" name="regForm">
+            <div>
+                <b>Email:</b> 
+                <span class="alertEmail">Wrong email adress</span>
+                  <input type="text" name="email" id="email" class="field"/>
+            </div>
+            <div>
+                <b>Password:</b> 
+                <span class="alertPassword">Wrong password</span>                        
+                <input type="password" name="pass" id="pass" class="field"/>
+            </div>
+            <div>
+                <b>Repeat:</b> 
+                <span class="alertRepeatePassword">Password must match</span>
+                <input type="password" name="repeatPass" id="repeatPass" class="field"/>
+            </div>
+            <div>
+                <input type="submit" name="Sign Up" id="submit" class="field" value="Sign Up" />
+            </div>
+
+        </form>
+    </div>
+
+
+    <script src="regpage.js"></script>
+</body></html>
