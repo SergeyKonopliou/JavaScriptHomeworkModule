@@ -78,4 +78,8 @@ form{
     color: red;
     opacity: 0;
 }
-
+.alertLastName,.alertFirstName,.alertYear,.alertPhone{
+    padding-left: 50px;
+    color: red;
+    opacity: 0;
+}

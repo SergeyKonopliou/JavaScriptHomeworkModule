@@ -47,8 +47,7 @@ function validateRegistrationInfo() {
 
 function validateEmail(email) {
     let validEmail = /^[\w.-]{3,}@[^\s@]+\.[^\s@]+$/;
-    let a = validEmail.test(email);
-    return a;
+    return validEmail.test(email);
 }
 
 function validatePassword(password) {
@@ -62,11 +61,11 @@ function validateRepeatePassword(password, repeatePassword) {
 }
 
 function getCookie(name) {
-    var cookie = " " + document.cookie;
-    var search = " " + name + "=";
-    var setStr = null;
-    var offset = 0;
-    var end = 0;
+    let cookie = " " + document.cookie;
+    let search = " " + name + "=";
+    let setStr = null;
+    let offset = 0;
+    let end = 0;
     if (cookie.length > 0) {
         offset = cookie.indexOf(search);
         if (offset != -1) {
