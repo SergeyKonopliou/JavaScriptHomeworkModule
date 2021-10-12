@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<clients>
+    <client>
+        <name>Иванов Иван Иванович</name>
+        <phone>+123453452354</phone>
+        <adress>st.Mainroad,45</adress>
+        <lastVisitDate>13.09.2019</lastVisitDate>
+    </client>
+     <client>
+        <name>Петров Петр Петрович</name>
+        <phone>+543456754396</phone>
+        <adress>st.Globalroad,56</adress>
+        <lastVisitDate>03.06.2002</lastVisitDate>
+    </client>
+     <client>
+        <name>Антонов Антон Антонович</name>
+        <phone>+455654563210</phone>
+        <adress>st.Greenroad</adress>
+        <lastVisitDate>23.03.2020</lastVisitDate>
+    </client>
+</clients>
